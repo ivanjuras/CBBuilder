@@ -3,4 +3,6 @@ dist/**/*.html
 dist/**/*.xml
 dist/**/*.jpg
 dist/**/*.png
+dist/**/*.js
+dist/**/*.css
 src/pug/core/core-config.pug
