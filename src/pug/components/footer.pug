@@ -6,6 +6,10 @@ if footer == 'standard'
 			.col-xs-12
 				ul.nav.nav-inline.m-b-1.p-t-1
 					each page in pages
-						li.nav-item
-							a.nav-link(href=page.url) #{page.shortTitle}
+						if page.category == 'about-page'  || page.category == 'privacy-policy-page'
+							li.nav-item
+								a.nav-link(href=page.url, rel="nofollow") #{page.shortTitle}
+						else
+							li.nav-item
+								a.nav-link(href=page.url) #{page.shortTitle}
 				p.text-xs-center &copy; #{siteSlogan}

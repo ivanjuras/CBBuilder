@@ -1,0 +1,27 @@
+//- About content container
+#MainContent(
+	class=aboutContentWidth + ' ' + aboutContentShadows
+)
+	.row.m-y-3
+		.col-md-8.col-md-offset-2
+			.row
+				.col-md-4.m-b-1
+					img(
+						src=profileImage
+						alt='A picture of ' + profileName + ' ' + profileLastName,
+						class='img-fluid ' + profilePhotoType
+					)
+				.col-md-8
+					h1 #{pageTitle} #{profileName} #{profileLastName}
+					p.lead #{metaDesc} 
+					block about-content
+			.row
+				.col-md-12
+					h4 #{contactCTA}
+					span #[strong Email Address:] #[a(href='malito: ' + profileEmail) #{profileEmail}] <br />
+					span #[strong Phone Number:] #{profilePhone} <br />
+					span #[strong Address:] #{profileStreetAddress} <br />
+					span #[strong State:] #{profileState} <br />
+					span #[strong Country:] #{profileCountry} <br />
+					span #[strong: ZIP code:] #{profileZip} <br />
+				

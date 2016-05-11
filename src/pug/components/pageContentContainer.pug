@@ -1,12 +1,11 @@
-//- Fixed width content container
+//- Page content container
 #MainContent(
 	class=pageContentWidth + ' ' + pageContentShadows
 )
 	.row.m-y-3
 		.col-md-12.col-xl-8.col-xl-offset-2
-			if usePageJumbotron !== 'yes'
-				h1 #{pageTitle}
-				p.lead #{metaDesc} 
+			h1 #{pageTitle}
+			p.lead #{metaDesc} 
 			block page-content-1
 			block page-content-2
 			block page-content-3
