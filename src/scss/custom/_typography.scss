@@ -1,0 +1,24 @@
+
+h1 {
+	font-size: 1.6rem;
+
+	@include lgScreens() {
+		font-size: 2.5rem;
+	}
+}
+
+h2 {
+	margin-bottom: 1.5rem;
+}
+
+p.lead {
+	font-size: 1.1rem;
+}
+
+a:focus {
+	color: inherit;
+}
+
+p, li {
+	margin-bottom: 2rem;
+}

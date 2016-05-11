@@ -1,0 +1,22 @@
+
+div(class=navbarWidth)
+	.row
+		.col-xs-12.p-x-0
+			nav.navbar
+				.col-xs-12.p-x-0
+					button.navbar-toggler.hidden-lg-up.pull-xs-right.m-t-1(
+						type='button',
+						data-toggle='collapse',
+						data-target='#collapsing-nav'
+					)
+						| &#9776 Menu
+					a.navbar-brand(href=siteUrl)
+						if brandLogo !== ''
+							img.img-fluid(src=brandLogo, alt=brandSlogan)
+						else 
+							| LOGO TEXT
+					#collapsing-nav.collapse.navbar-toggleable-md.pull-lg-right
+						ul.nav.navbar-nav.pull-s-right.m-t-1
+							each page in pages
+								li.nav-item
+									a.nav-link(href=page.url) #{page.shortTitle}

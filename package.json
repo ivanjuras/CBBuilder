@@ -1,0 +1,39 @@
+{
+  "name": "CBBuilder",
+  "version": "1.0.0",
+  "description": "CustomerBloom's static website generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Juras",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-register": "*",
+    "browser-sync": "*",
+    "critical": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-ignore": "*",
+    "gulp-jshint": "^2.0.0",
+    "gulp-order": "*",
+    "gulp-pretty-url": "*",
+    "gulp-pug": "*",
+    "gulp-pug-lint": "^0.1.6",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-uncss": "*",
+    "gulp-util": "*",
+    "jshint": "*",
+    "jshint-stylish": "^2.1.0",
+    "require-dir": "*",
+    "vinyl": "*",
+    "vinyl-ftp": "*"
+  }
+}

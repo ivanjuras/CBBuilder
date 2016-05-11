@@ -1,0 +1,25 @@
+
+// Main button class
+.btn {
+    &:focus {
+        outline: none;
+    }
+}
+
+// Navbar toggler button
+.navbar-toggler {
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+    padding: 7px;
+    border-radius: 0;
+    outline: none;
+    transition: background 0.3s;
+
+    &:hover {
+    	background: darken($brand-primary, 10%);
+    }
+
+    &:focus {
+    	outline: none;
+    }
+}

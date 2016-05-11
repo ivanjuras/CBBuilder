@@ -1,0 +1,27 @@
+// Standard jubmotron
+.jumbotron {
+	border-radius: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	
+	div {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+// Large height
+.jumbotron--lg-height {
+	@include lgScreens() {
+		height: 80vh;
+	}
+}
+
+// Full height
+.jumbotron--full-height {
+	@include lgScreens() {
+		height: 100vh;
+	}
+}

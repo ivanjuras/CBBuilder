@@ -1,0 +1,30 @@
+
+// ---------- Media screens ---------- //
+
+// Small screens media query
+@mixin smScreens() {
+    @media ( min-width: 544px ) {
+        @content;
+    }
+}
+
+// Small screens media query
+@mixin mdScreens() {
+    @media ( min-width: 768px ) {
+        @content;
+    }
+}
+
+// Small screens media query
+@mixin lgScreens() {
+    @media ( min-width: 992px ) {
+        @content;
+    }
+}
+
+// Small screens media query
+@mixin xlScreens() {
+    @media ( min-width: 1200px ) {
+        @content;
+    }
+}
