@@ -1,4 +1,6 @@
 node_modules
 dist/**/*.html
 dist/**/*.xml
+dist/**/*.jpg
+dist/**/*.png
 src/pug/core/core-config.pug
