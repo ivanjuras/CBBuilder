@@ -3,6 +3,16 @@
 	margin-bottom: 0;
 }
 
+// Navabr toggler
+.navbar-toggler {
+	margin-top: 10px !important;
+}
+
+// Brand logo
+.BrandLogo {
+	padding-right: 10px;
+}
+
 // Navbar fix
 @media( max-width:62em ) {
 	.navbar .navbar-nav>.nav-item {

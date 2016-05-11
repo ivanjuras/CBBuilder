@@ -1,0 +1,17 @@
+//- Jumbotron
+if useHomeJumbotron === 'yes'
+	div(class=jumbotronWidth)
+		div(
+			class='jumbotron jumbotron--' + jumbotronHeight +  ' ' + jumbotronBgColor + ' ' + jumbotronShadow,
+			style='background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),\
+			url('+ siteUrl + jumbotronHeroImage + ') center center no-repeat;\
+			background-size: cover;'
+		)
+			h1.text-xs-center #{pageTitle}
+			p.lead.text-xs-center #{metaDesc}
+			if useJumbotronBtn === 'yes'
+				div
+					a.btn.btn-lg(
+						class=jumbotronBtnSize,
+						href=jumbotronBtnLink
+					) #{jumbotronBtnText}

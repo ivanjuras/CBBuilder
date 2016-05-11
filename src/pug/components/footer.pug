@@ -5,10 +5,7 @@ if footer == 'standard'
 		.row.text-xs-center
 			.col-xs-12
 				ul.nav.nav-inline.m-b-1.p-t-1
-					li.nav-item
-						a.nav-link(href="#") Best CRM Software
-					li.nav-item
-						a.nav-link(href="#") What to Look For?
-					li.nav-item
-						a.nav-link(href="#") What to Avoid?
-				p.text-xs-center &copy; Florida Forecast: All About Customer Account Management
+					each page in pages
+						li.nav-item
+							a.nav-link(href=page.url) #{page.shortTitle}
+				p.text-xs-center &copy; #{siteSlogan}

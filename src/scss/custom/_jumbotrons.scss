@@ -15,13 +15,13 @@
 // Large height
 .jumbotron--lg-height {
 	@include lgScreens() {
-		height: 80vh;
+		height: 70vh;
 	}
 }
 
 // Full height
 .jumbotron--full-height {
 	@include lgScreens() {
-		height: 100vh;
+		height: 90vh;
 	}
 }

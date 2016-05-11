@@ -1,8 +1,12 @@
 //- Fixed width content container
-#MainContent(class=homeContentContainer)
+#MainContent(
+	class=pageContentWidth + ' ' + pageContentShadows
+)
 	.row.m-y-3
 		.col-md-12.col-xl-8.col-xl-offset-2
-			block home-content-1
-			block home-content-2
-			block home-content-3
-			block home-content-4
+			h1 #{pageTitle}
+			p.lead #{metaDesc} 
+			block page-content-1
+			block page-content-2
+			block page-content-3
+			block page-content-4

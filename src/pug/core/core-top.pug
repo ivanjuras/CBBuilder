@@ -14,5 +14,7 @@ head
 	meta(name="description" content=metaDesc)
 	if customFonts !== ''
 		link(rel="stylesheet", href=customFonts)
-	link(rel="stylesheet", href=styleUrl)
+	if customIcons !== ''
+		link(rel="stylesheet", href=customIcons)
+	link(rel="stylesheet", href='/assets/styles/style.css')
 <body>

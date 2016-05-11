@@ -8,7 +8,7 @@
 
 // Navbar toggler button
 .navbar-toggler {
-    border: 1px solid $brand-primary;
+    border: 1px solid $c-brand-primary;
     color: $brand-primary;
     padding: 7px;
     border-radius: 0;
@@ -16,7 +16,7 @@
     transition: background 0.3s;
 
     &:hover {
-    	background: darken($brand-primary, 10%);
+    	background: darken($c-brand-primary, 10%);
     }
 
     &:focus {
