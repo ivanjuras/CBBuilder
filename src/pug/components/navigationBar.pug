@@ -1,5 +1,8 @@
 
-div(class=navbarWidth)
+div(
+	class=navbarWidth + ' ' + navbarShadow,
+	style=navbarStyles
+)
 	.row
 		.col-xs-12.p-x-0
 			nav.navbar
@@ -20,7 +23,9 @@ div(class=navbarWidth)
 							style=brandNameStyles
 						) #{brandName}
 						//- img.img-fluid(src=brandLogo, alt=brandSlogan)
-					#collapsing-nav.collapse.navbar-toggleable-md.pull-lg-right.m-t-1
+					#collapsing-nav.collapse.navbar-toggleable-md.pull-lg-right(
+						style="margin-top: 0.7rem;"
+					)
 						ul.nav.navbar-nav.pull-s-right
 							each page in pages
 								if page.category !== 'privacy-policy-page'
