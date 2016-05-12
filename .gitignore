@@ -3,6 +3,7 @@ dist/**/*.html
 dist/**/*.xml
 dist/**/*.jpg
 dist/**/*.png
+dist/**/*.gif
 dist/**/*.js
 dist/**/*.css
 content/**/*.pug
