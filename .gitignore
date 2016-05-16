@@ -1,4 +1,5 @@
-content
+content/**/*.pug
+!content/privacy-policy.pug
 node_modules
 dist/**/*.html
 dist/**/*.xml
