@@ -1,5 +1,63 @@
 
 //------------------------------------------------------------//
+//                         VARIABLES
+//------------------------------------------------------------//
+
+// Colors
+$black:        #000000; // Black
+$turqoise:     #1abc9c; // Green
+$greensea:     #16a085; // Green 
+$emerald:      #2ecc71; // Green
+$nephritis:    #27ae60; // Green
+$peterriver:   #3498db; // Blue
+$belizehole:   #2980b9; // Blue
+$amethyst:     #9b59b6; // Purple
+$wisteria:     #8e44ad; // Purple
+$wetasphalt:   #34495e; // Dark grey
+$midnightblue: #2c3e50; // Dark grey
+$sunflower:    #f1c40f; // Yellow
+$orange:       #f39c12; // Orange
+$carrot:       #e67e22; // Orange
+$pumpkin:      #d35400; // Orange
+$alizarin:     #e74c3c; // Red
+$pomegranate:  #c0392b; // Red
+$clouds:       #ecf0f1; // White
+$silver:       #bdc3c7; // White
+$concrete:     #95a5a6; // Grey
+$asbestos:     #7f8c8d; // Grey
+$white:        #ffffff; // White
+
+// Global styles
+$bodyBgColor: $white;
+$textColor: $wetasphalt;
+$textFont: 'Open Sans';
+$linkColor: $nephritis;
+
+// Navigation styles
+$navbarWrapperBgColor: $white;
+$navbarBgColor: $pomegranate;
+$navbarLinkColor: $white;
+$brandLogoColor: $white;
+$brandNameColor: $white;
+$brandNameFont: 'Montserrat';
+
+// Jumbotron styles
+$jumbotronTextColor: $white;
+$jumbotronLgHeight: 70vh;
+$jumbotronFullHeight: 70vh;
+
+// Main content styles
+$mainContentBgColor: $white;
+$mainContentBorder: 1px solid transparentize( $pomegranate, 0.7 );
+
+// Footer styles
+$footerWrapperBgColor: $pomegranate;
+$footerBgColor: $pomegranate;
+$footerLinkColor: $white;
+$footerContentColor: $white;
+
+
+//------------------------------------------------------------//
 //                         UTILITIES
 //------------------------------------------------------------//
 
@@ -35,60 +93,6 @@
 
 
 //------------------------------------------------------------//
-//                         VARIABLES
-//------------------------------------------------------------//
-
-// Colors
-$black:        #000000; // Black
-$turqoise:     #1abc9c; // Green
-$greensea:     #16a085; // Green 
-$emerald:      #2ecc71; // Green
-$nephritis:    #27ae60; // Green
-$peterriver:   #3498db; // Blue
-$belizehole:   #2980b9; // Blue
-$amethyst:     #9b59b6; // Purple
-$wisteria:     #8e44ad; // Purple
-$wetasphalt:   #34495e; // Dark grey
-$midnightblue: #2c3e50; // Dark grey
-$sunflower:    #f1c40f; // Yellow
-$orange:       #f39c12; // Orange
-$carrot:       #e67e22; // Orange
-$pumpkin:      #d35400; // Orange
-$alizarin:     #e74c3c; // Red
-$pomegranate:  #c0392b; // Red
-$clouds:       #ecf0f1; // White
-$silver:       #bdc3c7; // White
-$concrete:     #95a5a6; // Grey
-$asbestos:     #7f8c8d; // Grey
-$white:        #ffffff; // White
-
-// Global styles
-$textColor: $wetasphalt;
-$linkColor: $nephritis;
-
-// Navigation styles
-$navbarBgColor: $nephritis;
-$navbarLinkColor: $white;
-$brandLogoColor: $white;
-$brandNameColor: $white;
-$brandNameFont: '';
-
-// Jumbotron styles
-$jumbotronTextColor: $white;
-$jumbotronLgHeight: 70vh;
-$jumbotronFullHeight: 70vh;
-
-// Main content styles
-$mainContentBgColor: $white;
-$mainContentBorder: '1px solid blue';
-
-// Footer styles
-$footerBGColor: $nephritis;
-$footerLinkColor: $white;
-$footerContentColor: $white;
-
-
-//------------------------------------------------------------//
 //                       UTILITY CLASSES
 //------------------------------------------------------------//
 
@@ -104,7 +108,8 @@ $footerContentColor: $white;
 //------------------------------------------------------------//
 
 body  {
-	background-color: #fff;
+	background-color: $bodyBgColor;
+	font-family: $textFont;
 }
 
 h1 {
@@ -155,6 +160,9 @@ img {
 
 // ---------- Navigation ---------- //
 
+#MainNavigationWrapper {
+	background: $navbarWrapperBgColor;
+}
 #MainNavigation {
 	background: $navbarBgColor;
 }
@@ -259,8 +267,11 @@ img {
 
 // ---------- Footer ---------- //
 
+#FooterWrapper {
+	background: $footerWrapperBgColor;
+}
 #Footer {
-	background: $footerBGColor;
+	background: $footerBgColor;
 
 	p {
 		color: $footerContentColor;

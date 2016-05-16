@@ -4,6 +4,8 @@
 )
 	.row
 		.col-md-12.col-xl-8.col-xl-offset-2
+			if useHomeJumbotron !== 'yes'
+				h1.m-b-3 #{pageTitle}
 			block home-content-1
 			block home-content-2
 			block home-content-3
