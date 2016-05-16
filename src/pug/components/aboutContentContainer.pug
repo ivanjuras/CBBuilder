@@ -1,27 +1,56 @@
 //- About content container
-#About(
-	class=aboutContentWidth + ' ' + aboutContentShadows
-)
-	.row.m-y-3
-		.col-md-8.col-md-offset-2
-			.row
-				.col-md-4.m-b-1
-					img(
-						src=profileImage
-						alt='A picture of ' + profileName + ' ' + profileLastName,
-						class='img-fluid ' + profilePhotoType
-					)
-				.col-md-8
-					h1 #{pageTitle}
-					p.lead #{metaDesc} 
-			.row
-				.col-md-12
-					block about-content
-					h4 #{contactCTA}
-					span #[strong Email Address:] #[a(href='malito: ' + profileEmail) #{profileEmail}] <br />
-					span #[strong Phone Number:] #{profilePhone} <br />
-					span #[strong Address:] #{profileStreetAddress} <br />
-					span #[strong State:] #{profileState} <br />
-					span #[strong Country:] #{profileCountry} <br />
-					span #[strong: ZIP code:] #{profileZip} <br />
+if aboutContentContainer == 'photo-left'
+	#About(
+		class=aboutContentWidth
+	)
+		.row.m-y-3
+			.col-md-8.col-md-offset-2
+				.row
+					.col-md-4.m-b-1
+						img(
+							src=profileImage
+							alt='A picture of ' + profileName + ' ' + profileLastName,
+							class='img-fluid ' + profilePhotoType
+						)
+					.col-md-8
+						h1 #{pageTitle}
+						p.lead #{metaDesc} 
+				.row
+					.col-md-12
+						block about-content
+						h4 #{contactCTA}
+						span #[strong Email Address:] #[a(href='malito: ' + profileEmail) #{profileEmail}] <br />
+						span #[strong Phone Number:] #{profilePhone} <br />
+						span #[strong Address:] #{profileStreetAddress} <br />
+						span #[strong State:] #{profileState} <br />
+						span #[strong Country:] #{profileCountry} <br />
+						span #[strong: ZIP code:] #{profileZip} <br />
+
+else if aboutContentContainer == 'stacked'
+	#About(
+		class=aboutContentWidth
+	)
+		.row.m-y-3
+			.col-md-8.col-md-offset-2
+				.row
+					.col-md-12.text-md-center
+						h1 #{pageTitle}
+				.row
+					.col-md-12.text-md-center
+						img.u-centerImage.m-b-2(
+							class='img-fluid ' + profilePhotoType,
+							src=profileImage,
+							alt='A picture of ' + profileName + ' ' + profileLastName
+						)
+						p.lead #{metaDesc}
+				.row
+					.col-md-12
+						block about-content
+						h4 #{contactCTA}
+						span #[strong Email Address:] #[a(href='malito: ' + profileEmail) #{profileEmail}] <br />
+						span #[strong Phone Number:] #{profilePhone} <br />
+						span #[strong Address:] #{profileStreetAddress} <br />
+						span #[strong State:] #{profileState} <br />
+						span #[strong Country:] #{profileCountry} <br />
+						span #[strong: ZIP code:] #{profileZip} <br />
 				

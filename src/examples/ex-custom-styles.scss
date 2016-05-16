@@ -87,6 +87,18 @@ $footerBGColor: $nephritis;
 $footerLinkColor: $white;
 $footerContentColor: $white;
 
+
+//------------------------------------------------------------//
+//                       UTILITY CLASSES
+//------------------------------------------------------------//
+
+// Center image
+.u-centerImage {
+	display: block;
+	margin: 0 auto;
+}
+
+
 //------------------------------------------------------------//
 //                        ELEMENT SELECTORS
 //------------------------------------------------------------//
