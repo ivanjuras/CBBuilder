@@ -7,6 +7,8 @@ head
 	title #{pageTitle}
 	meta(charset="utf-8")
 	meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	if faviconUrl !== ''
+		link(rel="shortcut icon", type="image/x-icon", href=faviconUrl)
 	meta(http-equiv="x-ua-Compatible", content="ie=edge")
 	meta(name="description" content=metaDesc)
 	if customFonts !== ''
