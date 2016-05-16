@@ -67,7 +67,7 @@ const config = {
 		password: '',
 		remoteDir: '',
 		port: 21,
-		numStreams: 3
+		numStreams: 5
 	},
 
 	// Other
