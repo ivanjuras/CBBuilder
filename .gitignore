@@ -9,4 +9,4 @@ dist/**/*.js
 dist/**/*.css
 /gulpfile.js
 src/pug/core/core-config.pug
-src/scss/custom/_site-specific.scss
+src/scss/_custom-styles.scss
