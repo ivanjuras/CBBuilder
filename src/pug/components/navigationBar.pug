@@ -25,8 +25,8 @@ div(
 						)
 							ul.nav.navbar-nav.pull-s-right
 								each page in pages
-									if page.category !== 'privacy-policy-page'
-										if page.category == 'about-page'
+									if page.category !== 'privacy-policy'
+										if page.category == 'about'
 											li.nav-item
 												a.nav-link(href=page.url, rel="nofollow") #{page.title}
 										else
