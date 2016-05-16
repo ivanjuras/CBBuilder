@@ -12,11 +12,11 @@
 						class='img-fluid ' + profilePhotoType
 					)
 				.col-md-8
-					h1 #{pageTitle} #{profileName} #{profileLastName}
+					h1 #{pageTitle}
 					p.lead #{metaDesc} 
-					block about-content
 			.row
 				.col-md-12
+					block about-content
 					h4 #{contactCTA}
 					span #[strong Email Address:] #[a(href='malito: ' + profileEmail) #{profileEmail}] <br />
 					span #[strong Phone Number:] #{profilePhone} <br />
