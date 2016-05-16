@@ -3,6 +3,7 @@ content/**/*.pug
 node_modules
 dist/**/*.html
 dist/**/*.xml
+dist/**/*.ico
 dist/**/*.jpg
 dist/**/*.png
 dist/**/*.gif
