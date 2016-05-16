@@ -1,0 +1,310 @@
+
+//------------------------------------------------------------//
+//                         UTILITIES
+//------------------------------------------------------------//
+
+// ---------- Media screens ---------- //
+
+// Small screens media query
+@mixin smScreens() {
+    @media ( min-width: 544px ) {
+        @content;
+    }
+}
+
+// Small screens media query
+@mixin mdScreens() {
+    @media ( min-width: 768px ) {
+        @content;
+    }
+}
+
+// Small screens media query
+@mixin lgScreens() {
+    @media ( min-width: 992px ) {
+        @content;
+    }
+}
+
+// Small screens media query
+@mixin xlScreens() {
+    @media ( min-width: 1200px ) {
+        @content;
+    }
+}
+
+
+//------------------------------------------------------------//
+//                         VARIABLES
+//------------------------------------------------------------//
+
+// Colors
+$turqoise:     #1abc9c; // Green
+$greensea:     #16a085; // Green 
+$emerald:      #2ecc71; // Green
+$nephritis:    #27ae60; // Green
+$peterriver:   #3498db; // Blue
+$belizehole:   #2980b9; // Blue
+$amethyst:     #9b59b6; // Purple
+$wisteria:     #8e44ad; // Purple
+$wetasphalt:   #34495e; // Dark grey
+$midnightblue: #2c3e50; // Dark grey
+$sunflower:    #f1c40f; // Yellow
+$orange:       #f39c12; // Orange
+$carrot:       #e67e22; // Orange
+$pumpkin:      #d35400; // Orange
+$alizarin:     #e74c3c; // Red
+$pomegranate:  #c0392b; // Red
+$clouds:       #ecf0f1; // White
+$silver:       #bdc3c7; // White
+$concrete:     #95a5a6; // Grey
+$asbestos:     #7f8c8d; // Grey
+$white:        #ffffff; // White
+
+// Global styles
+$textColor: $wetasphalt;
+$linkColor: $nephritis;
+
+// Navigation styles
+$navbarBgColor: $nephritis;
+$navbarLinkColor: $white;
+$brandLogoColor: $white;
+$brandNameColor: $white;
+$brandNameFont: 'Pacifico';
+
+// Jumbotron styles
+$jumbotronTextColor: $white;
+$jumbotronLgHeight: 70vh;
+$jumbotronFullHeight: 70vh;
+
+// Main content styles
+$mainContentBgColor: $white;
+$mainContentBorder: '1px solid blue';
+
+// Footer styles
+$footerBGColor: $nephritis;
+$footerLinkColor: $white;
+$footerContentColor: $white;
+
+//------------------------------------------------------------//
+//                        ELEMENT SELECTORS
+//------------------------------------------------------------//
+
+body  {
+	background-color: #fff;
+}
+
+h1 {
+	font-size: 1.6rem;
+
+	@include lgScreens() {
+		font-size: 2.5rem;
+	}
+}
+
+h2 {
+	margin-bottom: 1.5rem;
+}
+
+p {
+	color: $textColor;
+
+	&.lead {
+		font-size: 1.1rem;
+	}
+}
+
+a {
+	color: $linkColor;
+	transition: color 0.4s;
+
+	&:focus {
+		color: inherit;
+	}
+
+	&:hover {
+		color: darken( $linkColor, 20% );
+	}
+}
+
+p, li {
+	margin-bottom: 2rem;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+//------------------------------------------------------------//
+//                         COMPONENTS
+//------------------------------------------------------------//
+
+// ---------- Navigation ---------- //
+
+#MainNavigation {
+	background: $navbarBgColor;
+}
+
+// Main navigation item
+.nav-item {
+	margin-bottom: 0;
+
+	a {
+		color: $navbarLinkColor;
+		transition: color 0.5s;
+
+		&:hover {
+			color: darken( $navbarLinkColor, 20% );
+		}
+	}
+}
+
+// Brand component
+.BrandLogo {
+	font-size: 50px !important;
+	color: $brandLogoColor;
+	padding-right: 10px;
+}
+.BrandName {
+	font-family: $brandNameFont;
+	color: $brandNameColor;
+	font-size: 30px;
+}
+
+// Navbar fix
+@media( max-width:62em ) {
+	.navbar .navbar-nav>.nav-item {
+		float: none;
+		margin-left: .1rem;
+	}
+
+	.navbar .navbar-nav {
+		float:none !important;
+	}
+
+	.navbar .collapse.in, .navbar .collapsing  {
+		clear:both;
+	}
+
+	.nav-item {
+		border-bottom: 1px solid #ccc;
+
+		&:last-of-type {
+			border-bottom: 0;
+		}
+	}
+}
+
+// Nav items
+@media( min-width:62em ) {
+	.nav-item {
+		margin-right: 1.5rem;
+	}
+}
+
+// ---------- Jumbotrons ---------- //
+
+// Standard jubmotron
+.jumbotron {
+	color: $jumbotronTextColor;
+	border-radius: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+
+	.lead {
+		color: $jumbotronTextColor;
+	}
+	
+	div {
+		display: flex;
+		justify-content: center;
+	}
+
+	&--lg-height {
+		@include lgScreens() {
+			height: $jumbotronLgHeight;
+		}
+	}
+
+	&--full-height {
+		@include lgScreens() {
+			height: jumbotronFullHeight;
+		}
+	}
+}
+
+// ---------- Main Content ---------- //
+
+#MainContent {
+	padding: 3rem 0 3rem 0;
+	background: $mainContentBgColor;
+	border: $mainContentBorder;
+}
+
+// ---------- Footer ---------- //
+
+#Footer {
+	background: $footerBGColor;
+
+	p {
+		color: $footerContentColor;
+	}
+
+	a {
+		color: $footerLinkColor;
+	}
+	
+	a:hover {
+		color: darken( $footerLinkColor, 20% );
+	}
+
+	.nav-item:last-of-type {
+		margin-right: 0;
+	}
+}
+
+// ---------- Containers ---------- //
+
+.container,
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+// ---------- Rows ---------- //
+
+.row {
+	margin: 0;
+}
+
+
+// ---------- Buttons ---------- //
+
+// Main button
+.btn {
+    &:focus {
+        outline: none;
+    }
+}
+
+// Navbar toggler button
+.navbar-toggler {
+    border: 1px solid;
+    color: $navbarLinkColor;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 0;
+    outline: none;
+    transition: background 0.3s;
+
+    &:hover {
+    	background: darken( $navbarLinkColor, 20% );
+    }
+
+    &:focus {
+    	outline: none;
+    }
+}
