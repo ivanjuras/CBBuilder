@@ -4,22 +4,22 @@
 //-------------------------------------------------------//
 
 //- Profile variables
-- profileName           = 'John'
-- profileLastName       = 'Doe'
-- profileImage          = '/assets/img/john-doe.jpg'
-- profileEmail          = 'johndoe@gmail.com'
-- profilePhone          = '318-847-2730'
-- profileStreetAddress  = '4580 Tecumsah Lane'
-- profileCity           = 'Sarepta'
-- profileState          = 'Louisiana'
-- profileCountry        = 'The United States'
-- profileZip            = '71071'
+- profileName           = ''
+- profileLastName       = ''
+- profileImage          = '/assets/img/...'
+- profileEmail          = ''
+- profilePhone          = ''
+- profileStreetAddress  = ''
+- profileCity           = ''
+- profileState          = ''
+- profileCountry        = ''
+- profileZip            = ''
 
 //- Site variables
 - htmlLang              = 'en-US'
-- siteTitle             = 'SITE TITLE: SITE DESCRIPTION'
 - siteUrl               = '/'
-- siteSlogan            = 'SHORT SLOGAN HERE'
+- siteTitle             = ''
+- siteSlogan            = ''
 
 //- Fonts and icons
 - customIcons           = '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
@@ -31,164 +31,111 @@
 - usejQuery             = true
 
 //- Page defaults
-- pageTitle             = '--- Main title of the page ---'
-- metaDesc              = '--- Meta description of the page ---'
+- pageTitle             = ''
+- metaDesc              = ''
 
 
 //-------------------------------------------------------//
-//-                     GLOBAL STYLES
-//-------------------------------------------------------//
-
-//- Inline CSS
-- bodyStyles            = 'background: inherit'
-
-//- Inline CSS
-- mainContentStyles     = 'background: #fff'
-
-//- Colors
-- navbarBgColor = '#1bc1a0'
-- navbarLinkColor = '#ffffff'
-
-- mainContentBgColor = '#fff'
-
-- footerBgColor = '#1bc1a0'
-
-
-//-------------------------------------------------------//
-//-                     COMPONENTS
+//-                      COMPONENTS
 //-------------------------------------------------------//
 
 //---------- Navigation bar ----------//
 
 //- container, container-fluid
-- navbarWidth           = 'container'
-
-//- Inline CSS styles
-- navbarStyles          = 'color: ' + navBarBgColor
-
-//- empty, Wrapper--shadow
-- navbarShadow          = 'Wrapper--shadow'
+- navbarWidth           = ''
 
 //- Font Awesome, without fa
-- brandLogo             = 'gitlab'
-
-//- Inline CSS
-- brandLogoStyles       = 'color: darkblue; font-size: 50px'
+- brandLogo             = ''
 
 //- Brand name text
-- brandName             = 'Brand name'
-
-//- Inline CSS
-- brandNameStyles       = 'color: blue; font-size: 30px; font-family: Pacifico'
+- brandName             = ''
 
 //---------- Jumbotron ----------//
 
 //- Use jumbotron?
-- useHomeJumbotron      = 'yes'
+- useHomeJumbotron      = ''
 
 //- container, container-fluid
-- jumbotronWidth        = 'container'
+- jumbotronWidth        = ''
 
 //- empty, lg-height, full-height
 - jumbotronHeight       = ''
 
-//- Bootstrap default colors
-- jumbotronBgColor      = 'bg-info'
-
-//- empty, Wrapper--shadow
-- jumbotronShadow       = ''
-
 //- URI to the hero image
 - jumbotronHeroImage    = ''
 
-//- Use button with jumbotron?
-- useJumbotronBtn       = 'no'
+//- Use button in jumbotron?
+- useJumbotronBtn       = ''
+
+//- Jumbotron button text
+- jumbotronBtnText      = ''
 
 //- ID attribute or a full link
 - jumbotronBtnLink      = '#MainContent'
 
-//- Jumbotron button text
-- jumbotronBtnText      = 'Click here'
-
 
 //-------------------------------------------------------//
-//-                     SPECIFIC CONTAINERS
+//-                 SPECIFIC CONTAINERS
 //-------------------------------------------------------//
 
 //---------- Home container ----------//
 
 //- container, container-fluid
-- homeContentWidth      = 'container'
-
-//- empty, Wrapper--shadow
-- homeContentShadow     = 'Wrapper--shadow'
+- homeContentWidth      = ''
 
 //---------- Page container ----------//
 
 //- container, container-fluid
-- pageContentWidth      = 'container'
-
-//- empty, Wrapper--shadow
-- pageContentShadows    = ''
+- pageContentWidth      = ''
 
 //---------- About page container ----------//
 
 //- container, container-fluid
-- aboutContentWidth     = 'container'
-
-//- empty, Wrapper--shadow
-- aboutContentShadows   = 'Wrapper--shadow'
+- aboutContentWidth     = ''
 
 //- empty, img-rounded, img-circle
-- profilePhotoType      = 'img-rounded'
+- profilePhotoType      = ''
 
 //---------- Footer container ----------//
 
 //- standard
-- footer                 = 'standard'
-
-//- Inline CSS
-- footerStyles           = 'background: #333; color: #fff'
+- footer                = ''
 
 
 //-------------------------------------------------------//
 //-                  XML PAGES METADATA
 //-------------------------------------------------------//
 
-- pubDate = "Fri, 6 May 2016 15:40:00 GMT"
+- pubDate = "Fri, 16 May 2016 15:40:00 GMT"
 
 -
 	pages = [
 		{
-			title: "HOMEPAGE TITLE",
-			shortTitle: "HOME",
-			desc: "HOMEPAGE DESCRIPTION",
-			category: "HOMEPAGE-CATEGORY",
-			url: "/",
-			date: "Fri, 6 May 2016 15:35:00 GMT"
+			title: "Homepage",
+			desc: "Home of" + siteUrl,
+			category: "home-page",
+			url: "http://",
+			date: "Fri, 16 May 2016 15:35:00 GMT"
 		},
 		{
-			title: "PAGE TITLE",
-			shortTitle: "PAGE1",
-			desc: "PAGE DESCRIPTION",
-			category: "PAGE-CATEGORY",
-			url: "/PAGE",
-			date: "Fri, 6 May 2016 13:35:00 GMT"
+			title: "",
+			desc: "",
+			category: "",
+			url: "/..",
+			date: "Fri, 16 May 2016 13:35:00 GMT"
 		},
 		{
 			title: "About",
-			shortTitle: "About us",
 			desc: "Find out interesting info about this website. Learn more about us.",
-			category: "about-page",
+			category: "about",
 			url: "/about",
-			date: "Fri, 6 May 2016 13:35:00 GMT"
+			date: "Fri, 16 May 2016 13:35:00 GMT"
 		},
 		{
 			title: "Privacy Policy",
-			shortTitle: "Privacy Policy",
 			desc: "Be sure to read our privacy policy page before you leave sensitive info ",
-			category: "privacy-policy-page",
+			category: "privacy-policy",
 			url: "/privacy-policy",
-			date: "Fri, 6 May 2016 13:35:00 GMT"
+			date: "Fri, 16 May 2016 13:35:00 GMT"
 		},
 	];
