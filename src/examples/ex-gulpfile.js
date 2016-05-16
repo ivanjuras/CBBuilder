@@ -135,6 +135,7 @@ gulp.task( 'scripts', function() {
 		.pipe( browserSync.reload({ stream:true }) );
 } );
 
+
 // ---------- XML feed task ---------- //
 
 gulp.task( 'xml', function() {
@@ -145,6 +146,7 @@ gulp.task( 'xml', function() {
 		.pipe( rename( 'feed.xml' ) )
 		.pipe( gulp.dest( config.pug.output ) )
 } );
+
 
 // ---------- Critical CSS task ---------- //
 
