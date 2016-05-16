@@ -62,10 +62,10 @@ const config = {
 	// FTP
 	ftp: {
 		input: ['./dist/**/*'],
-		host: '',
-		user: '',
-		password: '',
-		remoteDir: '',
+		host: 'ftp.y8home.com',
+		user: 'jurky3fo',
+		password: 'Dreamhost2016!!',
+		remoteDir: '/y8home.com',
 		port: 21,
 		numStreams: 3
 	},
@@ -135,6 +135,7 @@ gulp.task( 'scripts', function() {
 		.pipe( browserSync.reload({ stream:true }) );
 } );
 
+
 // ---------- XML feed task ---------- //
 
 gulp.task( 'xml', function() {
@@ -145,6 +146,7 @@ gulp.task( 'xml', function() {
 		.pipe( rename( 'feed.xml' ) )
 		.pipe( gulp.dest( config.pug.output ) )
 } );
+
 
 // ---------- Critical CSS task ---------- //
 

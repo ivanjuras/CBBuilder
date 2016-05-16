@@ -1,37 +1,35 @@
 
 div(
-	class=navbarWidth + ' ' + navbarShadow,
-	style=navbarStyles
+	id='MainNavigation'
 )
-	.row
-		.col-xs-12.p-x-0
-			nav.navbar
-				.col-xs-12.p-x-0
-					button.navbar-toggler.hidden-lg-up.pull-xs-right(
-						type='button',
-						data-toggle='collapse',
-						data-target='#collapsing-nav'
-					)
-						| &#9776 Menu
-					a.navbar-brand(href=siteUrl)
-						i(
-							class='BrandLogo fa fa-' + brandLogo,
-							style=brandLogoStyles
+	div(
+		class=navbarWidth
+	)
+		.row
+			.col-xs-12.p-x-0
+				nav.navbar
+					.col-xs-12.p-x-0
+						button.navbar-toggler.hidden-lg-up.pull-xs-right(
+							type='button',
+							data-toggle='collapse',
+							data-target='#collapsing-nav'
 						)
-						span(
-							class='BrandName',
-							style=brandNameStyles
-						) #{brandName}
-						//- img.img-fluid(src=brandLogo, alt=brandSlogan)
-					#collapsing-nav.collapse.navbar-toggleable-md.pull-lg-right(
-						style="margin-top: 0.7rem;"
-					)
-						ul.nav.navbar-nav.pull-s-right
-							each page in pages
-								if page.category !== 'privacy-policy-page'
-									if page.category == 'about-page'
-										li.nav-item
-											a.nav-link(href=page.url, rel="nofollow") #{page.shortTitle}
-									else
-										li.nav-item
-											a.nav-link(href=page.url) #{page.shortTitle}
+							| &#9776 Menu
+						a.navbar-brand(href=siteUrl)
+							i(
+								class='BrandLogo fa fa-' + brandLogo
+							)
+							span(class="BrandName") #{brandName}
+							//- img.img-fluid(src=brandLogo, alt=brandSlogan)
+						#collapsing-nav.collapse.navbar-toggleable-md.pull-lg-right(
+							style="margin-top: 0.7rem;"
+						)
+							ul.nav.navbar-nav.pull-s-right
+								each page in pages
+									if page.category !== 'privacy-policy-page'
+										if page.category == 'about-page'
+											li.nav-item
+												a.nav-link(href=page.url, rel="nofollow") #{page.shortTitle}
+										else
+											li.nav-item
+												a.nav-link(href=page.url) #{page.shortTitle}

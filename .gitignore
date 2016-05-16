@@ -7,4 +7,6 @@ dist/**/*.gif
 dist/**/*.js
 dist/**/*.css
 content/**/*.pug
+gulpfile.js
 src/pug/core/core-config.pug
+src/scss/custom/_site-specific.scss
