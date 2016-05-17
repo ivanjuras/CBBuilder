@@ -9,6 +9,7 @@ dist/**/*.png
 dist/**/*.gif
 dist/**/*.js
 dist/**/*.css
+dist/**/*.txt
 /gulpfile.js
 src/pug/core/core-config.pug
 src/scss/_custom-styles.scss
