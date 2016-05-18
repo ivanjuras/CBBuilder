@@ -29,19 +29,21 @@ $white:                      #ffffff; // White
 
 // Global styles
 $bodyBgColor:                $white;
-$textColor:                  lighten( $black, 10% );
-$textFont:                   'Lora';
+$textColor:                  lighten( $black, 15% );
+$textFont:                   'Roboto';
+$h1FontFamily:               'Roboto';
+$h2FontFamily:               'Roboto';
 $textSize:                   1.125rem;
 $linkColor:                  $peterriver;
 
 // Navigation styles
 $navbarWrapperBgColor:       $white;
 $navbarBgColor:              $white;
-$navbarBorderBottom:         10px solid $black;
-$navbarLinkColor:            $black;
-$brandLogoColor:             $black;
-$brandNameColor:             $black;
-$brandNameFont:              'Lora';
+$navbarBorderBottom:         20px dotted $nephritis;
+$navbarLinkColor:            $nephritis;
+$brandLogoColor:             $nephritis;
+$brandNameColor:             $nephritis;
+$brandNameFont:              'Lobster';
 
 // Jumbotron styles
 $jumbotronTextColor:         $white;
@@ -50,11 +52,12 @@ $jumbotronFullHeight:        80vh;
 
 // Main content styles
 $mainContentBgColor:        $white;
-$mainContentBorder:         1px solid transparentize( $black, 0.8 );
+$mainContentBorder:         hidden;
 
 // Footer styles
 $footerWrapperBgColor:      $black;
 $footerBgColor:             $black;
+$footerBorderTop:           20px dotted $nephritis;
 $footerLinkColor:           $white;
 $footerContentColor:        $white;
 
@@ -279,6 +282,7 @@ img {
 }
 #Footer {
 	background: $footerBgColor;
+	border-top: $footerBorderTop;
 
 	p {
 		color: $footerContentColor;

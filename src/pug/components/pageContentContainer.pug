@@ -3,7 +3,9 @@
 	class=pageContentWidth
 )
 	.row
-		.col-md-12.col-xl-8.col-xl-offset-2
+		.col-md-12(
+			class=pageContentContainer
+		)
 			h1.m-b-3 #{pageTitle}
 			if metaDesc
 				p.lead #{metaDesc}

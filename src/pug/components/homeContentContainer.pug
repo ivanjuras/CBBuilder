@@ -3,9 +3,12 @@
 	class=homeContentWidth
 )
 	.row
-		.col-md-12.col-xl-8.col-xl-offset-2
+		.col-md-12(
+			class=homeContentContainer
+		)
 			if useHomeJumbotron !== 'yes'
-				h1.m-b-3 #{pageTitle}
+				h1.m-b-1 #{pageTitle}
+				p.lead #{metaDesc}
 			block home-content-1
 			block home-content-2
 			block home-content-3
