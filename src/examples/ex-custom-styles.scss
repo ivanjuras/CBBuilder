@@ -4,57 +4,59 @@
 //------------------------------------------------------------//
 
 // Colors
-$black:        #000000; // Black
-$turqoise:     #1abc9c; // Green
-$greensea:     #16a085; // Green 
-$emerald:      #2ecc71; // Green
-$nephritis:    #27ae60; // Green
-$peterriver:   #3498db; // Blue
-$belizehole:   #2980b9; // Blue
-$amethyst:     #9b59b6; // Purple
-$wisteria:     #8e44ad; // Purple
-$wetasphalt:   #34495e; // Dark grey
-$midnightblue: #2c3e50; // Dark grey
-$sunflower:    #f1c40f; // Yellow
-$orange:       #f39c12; // Orange
-$carrot:       #e67e22; // Orange
-$pumpkin:      #d35400; // Orange
-$alizarin:     #e74c3c; // Red
-$pomegranate:  #c0392b; // Red
-$clouds:       #ecf0f1; // White
-$silver:       #bdc3c7; // White
-$concrete:     #95a5a6; // Grey
-$asbestos:     #7f8c8d; // Grey
-$white:        #ffffff; // White
+$black:                      #000000; // Black
+$turqoise:                   #1abc9c; // Green
+$greensea:                   #16a085; // Green 
+$emerald:                    #2ecc71; // Green
+$nephritis:                  #27ae60; // Green
+$peterriver:                 #3498db; // Blue
+$belizehole:                 #2980b9; // Blue
+$amethyst:                   #9b59b6; // Purple
+$wisteria:                   #8e44ad; // Purple
+$wetasphalt:                 #34495e; // Dark grey
+$midnightblue:               #2c3e50; // Dark grey
+$sunflower:                  #f1c40f; // Yellow
+$orange:                     #f39c12; // Orange
+$carrot:                     #e67e22; // Orange
+$pumpkin:                    #d35400; // Orange
+$alizarin:                   #e74c3c; // Red
+$pomegranate:                #c0392b; // Red
+$clouds:                     #ecf0f1; // White
+$silver:                     #bdc3c7; // White
+$concrete:                   #95a5a6; // Grey
+$asbestos:                   #7f8c8d; // Grey
+$white:                      #ffffff; // White
 
 // Global styles
-$bodyBgColor: $white;
-$textColor: $wetasphalt;
-$textFont: 'Open Sans';
-$linkColor: $nephritis;
+$bodyBgColor:                $white;
+$textColor:                  lighten( $black, 10% );
+$textFont:                   'Lora';
+$textSize:                   1.125rem;
+$linkColor:                  $peterriver;
 
 // Navigation styles
-$navbarWrapperBgColor: $white;
-$navbarBgColor: $pomegranate;
-$navbarLinkColor: $white;
-$brandLogoColor: $white;
-$brandNameColor: $white;
-$brandNameFont: 'Montserrat';
+$navbarWrapperBgColor:       $white;
+$navbarBgColor:              $white;
+$navbarBorderBottom:         10px solid $black;
+$navbarLinkColor:            $black;
+$brandLogoColor:             $black;
+$brandNameColor:             $black;
+$brandNameFont:              'Lora';
 
 // Jumbotron styles
-$jumbotronTextColor: $white;
-$jumbotronLgHeight: 70vh;
-$jumbotronFullHeight: 70vh;
+$jumbotronTextColor:         $white;
+$jumbotronLgHeight:          70vh;
+$jumbotronFullHeight:        80vh;
 
 // Main content styles
-$mainContentBgColor: $white;
-$mainContentBorder: 1px solid transparentize( $pomegranate, 0.7 );
+$mainContentBgColor:        $white;
+$mainContentBorder:         1px solid transparentize( $black, 0.8 );
 
 // Footer styles
-$footerWrapperBgColor: $pomegranate;
-$footerBgColor: $pomegranate;
-$footerLinkColor: $white;
-$footerContentColor: $white;
+$footerWrapperBgColor:      $black;
+$footerBgColor:             $black;
+$footerLinkColor:           $white;
+$footerContentColor:        $white;
 
 
 //------------------------------------------------------------//
@@ -110,6 +112,7 @@ $footerContentColor: $white;
 body  {
 	background-color: $bodyBgColor;
 	font-family: $textFont;
+	font-size: $textSize;
 }
 
 h1 {
@@ -128,7 +131,8 @@ p {
 	color: $textColor;
 
 	&.lead {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
+		font-weight: bold;
 	}
 }
 
@@ -165,6 +169,7 @@ img {
 }
 #MainNavigation {
 	background: $navbarBgColor;
+	border-bottom: $navbarBorderBottom;
 }
 
 // Main navigation item
@@ -252,7 +257,7 @@ img {
 
 	&--full-height {
 		@include lgScreens() {
-			height: jumbotronFullHeight;
+			height: $jumbotronFullHeight;
 		}
 	}
 }
@@ -341,6 +346,7 @@ img {
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
+	margin-bottom: 20px;
 }
 .VideoWrapper iframe {
 	position: absolute;

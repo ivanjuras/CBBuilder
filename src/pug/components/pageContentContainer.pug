@@ -5,6 +5,8 @@
 	.row
 		.col-md-12.col-xl-8.col-xl-offset-2
 			h1.m-b-3 #{pageTitle}
+			if metaDesc
+				p.lead #{metaDesc}
 			block page-content-1
 			block page-content-2
 			block page-content-3

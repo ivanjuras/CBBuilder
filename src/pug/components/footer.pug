@@ -9,7 +9,7 @@
 			.col-xs-12
 				ul.nav.nav-inline.m-b-1.p-t-1
 					each page in pages
-						if page.category == 'about-page'  || page.category == 'privacy-policy-page'
+						if page.category == 'about'  || page.category == 'privacy-policy'
 							li.nav-item
 								a.nav-link(href=page.url, rel="nofollow") #{page.title}
 						else
