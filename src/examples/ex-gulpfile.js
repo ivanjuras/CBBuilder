@@ -24,6 +24,17 @@ const critical        = require('critical').stream;
 // ---------- Config ---------- //
 
 const config = {
+	// FTP
+	ftp: {
+		input: ['./dist/**/*'],
+		host: '',
+		user: '',
+		password: '',
+		remoteDir: '',
+		port: 21,
+		numStreams: 5
+	},
+	
 	// Pug
 	pug: {
 		input: './content/**/*.pug',
@@ -57,17 +68,6 @@ const config = {
 	browsersync: {
 		baseDir: './dist/',
 		doNotify: false
-	},
-
-	// FTP
-	ftp: {
-		input: ['./dist/**/*'],
-		host: '',
-		user: '',
-		password: '',
-		remoteDir: '',
-		port: 21,
-		numStreams: 5
 	},
 
 	// Other
