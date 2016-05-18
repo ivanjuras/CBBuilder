@@ -11,5 +11,6 @@ dist/**/*.js
 dist/**/*.css
 dist/**/*.txt
 /gulpfile.js
+/README.md
 src/pug/core/core-config.pug
 src/scss/_custom-styles.scss
