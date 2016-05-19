@@ -1,8 +1,10 @@
-//- Fixed width content container
+//- Page content container
 #MainContent(
-	class=pageContentWidth + ' ' + pageContentShadows
+	class=pageContentWidth
 )
-	.row.m-y-3
-		.col-md-12.col-xl-12
-			h1 #{pageTitle} 
+	.row
+		.col-md-12(
+			class=pageContent
+		)
+			h1.m-b-3 #{pageTitle}
 			block privacy-policy-content
