@@ -33,7 +33,9 @@ else if aboutContentContainer == 'stacked'
 		class=aboutContentWidth
 	)
 		.row.m-y-3
-			.col-md-8.col-md-offset-2
+			.col-md-12(
+				class=aboutContent
+			)
 				.row
 					.col-md-12.text-md-center
 						h1 #{pageTitle}
