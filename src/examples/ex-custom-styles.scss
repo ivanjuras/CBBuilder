@@ -16,6 +16,7 @@ $wisteria:                   #8e44ad; // Purple
 $wetasphalt:                 #34495e; // Dark grey
 $midnightblue:               #2c3e50; // Dark grey
 $sunflower:                  #f1c40f; // Yellow
+$creamCan:                   #F5D76E; // Yellow
 $orange:                     #f39c12; // Orange
 $carrot:                     #e67e22; // Orange
 $pumpkin:                    #d35400; // Orange
@@ -28,22 +29,22 @@ $asbestos:                   #7f8c8d; // Grey
 $white:                      #ffffff; // White
 
 // Global styles
-$bodyBgColor:                $white;
+$bodyBgColor:                $creamCan;
 $textColor:                  lighten( $black, 15% );
 $textFont:                   'Roboto';
-$h1FontFamily:               'Roboto';
-$h2FontFamily:               'Roboto';
+$h1FontFamily:               'Open Sans';
+$h2FontFamily:               'Open Sans';
 $textSize:                   1.125rem;
-$linkColor:                  $peterriver;
+$linkColor:                  darken( $sunflower, 20% );
 
 // Navigation styles
-$navbarWrapperBgColor:       $white;
-$navbarBgColor:              $white;
-$navbarBorderBottom:         20px dotted $nephritis;
-$navbarLinkColor:            $nephritis;
-$brandLogoColor:             $nephritis;
-$brandNameColor:             $nephritis;
-$brandNameFont:              'Lobster';
+$navbarWrapperBgColor:       $creamCan;
+$navbarBgColor:              $midnightblue;
+$navbarBorderBottom:         10px solid darken( $midnightblue, 10% );
+$navbarLinkColor:            $white;
+$brandLogoColor:             $white;
+$brandNameColor:             $white;
+$brandNameFont:              'Chewy';
 
 // Jumbotron styles
 $jumbotronTextColor:         $white;
@@ -55,9 +56,9 @@ $mainContentBgColor:        $white;
 $mainContentBorder:         hidden;
 
 // Footer styles
-$footerWrapperBgColor:      $black;
-$footerBgColor:             $black;
-$footerBorderTop:           20px dotted $nephritis;
+$footerWrapperBgColor:      $creamCan;
+$footerBgColor:             $midnightblue;
+$footerBorderTop:           10px solid darken( $midnightblue, 10% );
 $footerLinkColor:           $white;
 $footerContentColor:        $white;
 
