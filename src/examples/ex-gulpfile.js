@@ -212,3 +212,4 @@ gulp.task( 'w', ['pug','styles', 'scripts', 'xml'], function() {
 // ---------- Main Task ---------- //
 
 gulp.task( 'default', ['pug', 'styles', 'scripts', 'xml'] );
+gulp.task( 'master', ['pug', 'styles', 'scripts', 'xml', 'c', 'd'] );
