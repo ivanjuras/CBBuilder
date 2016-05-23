@@ -29,22 +29,22 @@ $asbestos:                   #7f8c8d; // Grey
 $white:                      #ffffff; // White
 
 // Global styles
-$bodyBgColor:                $creamCan;
+$bodyBgColor:                $white;
 $textColor:                  lighten( $black, 15% );
-$textFont:                   'Roboto';
-$h1FontFamily:               'Open Sans';
-$h2FontFamily:               'Open Sans';
-$textSize:                   1.125rem;
-$linkColor:                  darken( $sunflower, 20% );
+$textFont:                   'Open Sans';
+$h1FontFamily:               'Roboto';
+$h2FontFamily:               'Roboto';
+$textSize:                   1.3rem;
+$linkColor:                  lighten( $greensea, 10% );
 
 // Navigation styles
-$navbarWrapperBgColor:       $creamCan;
-$navbarBgColor:              $midnightblue;
-$navbarBorderBottom:         10px solid darken( $midnightblue, 10% );
-$navbarLinkColor:            $white;
-$brandLogoColor:             $white;
-$brandNameColor:             $white;
-$brandNameFont:              'Chewy';
+$navbarWrapperBgColor:       $white;
+$navbarBgColor:              $white;
+$navbarBorderBottom:         10px solid darken( $greensea, 10% );
+$navbarLinkColor:            $greensea;
+$brandLogoColor:             $greensea;
+$brandNameColor:             $greensea;
+$brandNameFont:              'Mrs Sheppards';
 
 // Jumbotron styles
 $jumbotronTextColor:         $white;
@@ -53,12 +53,12 @@ $jumbotronFullHeight:        80vh;
 
 // Main content styles
 $mainContentBgColor:        $white;
-$mainContentBorder:         hidden;
+$mainContentBorder:         1px solid darken( $greensea, 10% );
 
 // Footer styles
-$footerWrapperBgColor:      $creamCan;
-$footerBgColor:             $midnightblue;
-$footerBorderTop:           10px solid darken( $midnightblue, 10% );
+$footerWrapperBgColor:      $white;
+$footerBgColor:             darken( $greensea, 10% );
+$footerBorderTop:           10px solid darken( $greensea, 20% );
 $footerLinkColor:           $white;
 $footerContentColor:        $white;
 
@@ -108,6 +108,15 @@ $footerContentColor:        $white;
 	margin: 0 auto;
 }
 
+// Flexbox utilities
+.u-flexCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	@include mdScreens() {
+			
+	}	
+}
 
 //------------------------------------------------------------//
 //                        ELEMENT SELECTORS
@@ -273,7 +282,10 @@ img {
 #MainContent {
 	padding: 3rem 0 3rem 0;
 	background: $mainContentBgColor;
-	border: $mainContentBorder;
+	
+	@include mdScreens() {
+		border: $mainContentBorder;
+	}
 }
 
 // ---------- Footer ---------- //

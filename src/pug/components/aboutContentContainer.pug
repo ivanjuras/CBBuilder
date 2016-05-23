@@ -16,7 +16,8 @@ if aboutContentContainer == 'photo-left'
 						)
 					.col-md-8
 						h1 #{pageTitle}
-						p.lead #{metaDesc} 
+						if metaDesc
+							p.lead #{metaDesc} 
 				.row
 					.col-md-12
 						block about-content-photo-left
@@ -46,7 +47,8 @@ else if aboutContentContainer == 'stacked'
 							src=profileImage,
 							alt='A picture of ' + profileName + ' ' + profileLastName
 						)
-						p.lead #{metaDesc}
+						if medaDesc
+							p.lead #{metaDesc}
 				.row
 					.col-md-12
 						block about-content-stacked
