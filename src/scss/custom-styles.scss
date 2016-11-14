@@ -32,20 +32,20 @@ $white:                      #ffffff; // White
 // Global styles
 $bodyBgColor:                $white;
 $textColor:                  lighten( $black, 15% );
-$textFont:                   'Open Sans';
-$h1FontFamily:               'Roboto';
-$h2FontFamily:               'Roboto';
-$textSize:                   1.3rem;
-$linkColor:                  lighten( $greensea, 10% );
+$textFont:                   'Source Sans Pro';
+$h1FontFamily:               'Source Sans Pro';
+$h2FontFamily:               'Source Sans Pro';
+$textSize:                   1.1rem;
+$linkColor:                  lighten( $brewedMustard, 10% );
 
 // Navigation styles
 $navbarWrapperBgColor:       $white;
 $navbarBgColor:              $white;
-$navbarBorderBottom:         10px solid darken( $greensea, 10% );
-$navbarLinkColor:            $greensea;
-$brandLogoColor:             $greensea;
-$brandNameColor:             $greensea;
-$brandNameFont:              'Mrs Sheppards';
+$navbarBorderBottom:         10px solid darken( $brewedMustard, 10% );
+$navbarLinkColor:            $brewedMustard;
+$brandLogoColor:             $brewedMustard;
+$brandNameColor:             $brewedMustard;
+$brandNameFont:              'Permanent Marker';
 
 // Jumbotron styles
 $jumbotronTextColor:         $white;
@@ -54,12 +54,12 @@ $jumbotronFullHeight:        80vh;
 
 // Main content styles
 $mainContentBgColor:        $white;
-$mainContentBorder:         1px solid darken( $greensea, 10% );
+$mainContentBorder:         1px solid darken( $brewedMustard, 10% );
 
 // Footer styles
-$footerWrapperBgColor:      $white;
-$footerBgColor:             darken( $greensea, 10% );
-$footerBorderTop:           10px solid darken( $greensea, 20% );
+$footerWrapperBgColor:      $brewedMustard;
+$footerBgColor:             darken( $brewedMustard, 10% );
+$footerBorderTop:           10px solid darken( $brewedMustard, 20% );
 $footerLinkColor:           $white;
 $footerContentColor:        $white;
 
